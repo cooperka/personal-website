@@ -9,9 +9,61 @@ import SocialLink from '../SocialLink';
 
 import './styles.css';
 
+const APP_CONFIG = {
+  id: 'cooperka.www',
+  name: 'cooperka\'s personal site',
+  vendor: 'cooperka',
+};
+
+const PERMISSIONS = {
+  _public: ['Read', 'Insert'],
+};
+
+function safeInit() {
+  if (!window.safeApp) {
+    return Promise.reject('No window.safeApp');
+  }
+
+  return window.safeApp.initialise(APP_CONFIG)
+    .then((appToken) => {
+      console.log('Application Token received:', appToken);
+      window.safeApp.authorise(appToken, PERMISSIONS)
+        .then((authURI) => {
+          console.log('Application was authorised by user. Auth URI received:', authURI);
+          window.safeApp.connectAuthorised(appToken, authURI)
+            .then(() => {
+              console.log('Application is now registered in the network.');
+              return appToken;
+            });
+        }, (error) => {
+          console.warn('Application authorisation was rejected:', error);
+        });
+    });
+}
+
+function safeCleanup(appToken) {
+  // Make sure that SAFEApp instance is freed from memory.
+  if (appToken) {
+    window.safeApp.free(appToken);
+    console.log('SAFEApp instance freed.');
+  }
+}
+
 type Props = {};
 
 class App extends Component<Props> {
+
+  componentDidMount() {
+    safeInit()
+      .then((appToken) => { this.currAppToken = appToken; })
+      .catch((error) => console.log('Could not init:', error));
+  }
+
+  componentWillUnmount() {
+    safeCleanup(this.currAppToken);
+  }
+
+  currAppToken = undefined;
 
   renderMainHeader() {
     return (
