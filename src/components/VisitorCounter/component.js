@@ -5,6 +5,43 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
+async function testMutableData(appHandle) {
+  const typeTag = 15001; // TODO: What is this? No documentation found.
+  const MUTABLE_DATA_ENTRIES = { key1: 'value1', key2: 'value2' };
+
+  const dataHandle = await window.safeMutableData.newRandomPublic(appHandle, typeTag);
+
+  await window.safeMutableData.quickSetup(dataHandle, MUTABLE_DATA_ENTRIES);
+
+  const keys = await window.safeMutableData.getKeys(dataHandle);
+
+  window.safeMutableDataKeys.forEach(keys, (key) => console.log('Key:', key.toString()));
+  console.log('Keys iteration finished');
+
+  window.safeMutableDataKeys.free(keys);
+  console.log('MutableData Keys instance freed.');
+
+  const values = await window.safeMutableData.getValues(dataHandle);
+
+  window.safeMutableDataValues.forEach(values, (value) => console.log('Value:', value.buf.toString()));
+  console.log('Values iteration finished');
+
+  window.safeMutableDataValues.free(values);
+  console.log('MutableData Values instance freed.');
+
+  const entries = await window.safeMutableData.getEntries(dataHandle);
+
+  window.safeMutableDataEntries.forEach(entries, (key, value) =>
+    console.log('Entry: (', key.toString(), ',', value.buf.toString(), ')'));
+  console.log('Entries iteration finished');
+
+  window.safeMutableDataEntries.free(entries);
+  console.log('MutableData Entries instance freed.');
+
+  window.safeMutableData.free(dataHandle);
+  console.log('MutableData instance freed.');
+}
+
 async function safeInit(appConfig, permissions): Promise<string> {
   if (!window.safeApp) {
     return Promise.reject('No window.safeApp');
@@ -57,6 +94,9 @@ class VisitorCounter extends Component<Props, State> {
       .then((appHandle) => {
         console.log('VisitorCounter received appHandle:', appHandle);
         this.setState({ currAppHandle: appHandle });
+
+        testMutableData(appHandle)
+          .catch((error) => console.log('MutableData error:', error));
       })
       .catch((error) => console.log('Could not init:', error));
   }
