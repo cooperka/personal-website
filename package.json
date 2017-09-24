@@ -6,11 +6,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:snapshot": "react-scripts build && react-snapshot",
+    "serve": "node server/app.js",
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint . --ext .js,.jsx",
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "express": "4.15.4",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-snapshot": "1.2.0"
