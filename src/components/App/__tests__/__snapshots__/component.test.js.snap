@@ -26,5 +26,10 @@ exports[`renders 1`] = `
   <ul
     className="social-links"
   />
+  <div
+    className="visitor-counter"
+  >
+    Token: N/A
+  </div>
 </div>
 `;
