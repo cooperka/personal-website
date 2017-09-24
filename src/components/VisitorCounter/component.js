@@ -5,30 +5,24 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-function safeInit(appConfig, permissions) {
+async function safeInit(appConfig, permissions): Promise<string> {
   if (!window.safeApp) {
     return Promise.reject('No window.safeApp');
   }
 
-  return window.safeApp.initialise(appConfig)
-    .then((appToken) => {
-      console.log('Application Token received:', appToken);
-      return window.safeApp.authorise(appToken, permissions)
-        .then((authURI) => {
-          console.log('Application was authorised by user. Auth URI received:', authURI);
-          return window.safeApp.connectAuthorised(appToken, authURI)
-            .then(() => {
-              console.log('Application is now registered in the network.');
-              return appToken;
-            });
-        })
-        .catch((error) => {
-          console.warn('Application authorisation was rejected:', error);
-        });
-    });
+  const appToken = await window.safeApp.initialise(appConfig);
+  console.log('Application Token received:', appToken);
+
+  const authURI = await window.safeApp.authorise(appToken, permissions);
+  console.log('Application was authorised by user. Auth URI received:', authURI);
+
+  await window.safeApp.connectAuthorised(appToken, authURI);
+  console.log('Application is now registered in the network.');
+
+  return appToken;
 }
 
-function safeCleanup(appToken) {
+function safeCleanup(appToken): void {
   // Make sure that SAFEApp instance is freed from memory.
   if (appToken) {
     window.safeApp.free(appToken);
