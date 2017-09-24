@@ -10,22 +10,22 @@ async function safeInit(appConfig, permissions): Promise<string> {
     return Promise.reject('No window.safeApp');
   }
 
-  const appToken = await window.safeApp.initialise(appConfig);
-  console.log('Application Token received:', appToken);
+  const appHandle = await window.safeApp.initialise(appConfig);
+  console.log('Initialized. Handle:', appHandle);
 
-  const authURI = await window.safeApp.authorise(appToken, permissions);
-  console.log('Application was authorised by user. Auth URI received:', authURI);
+  const authURI = await window.safeApp.authorise(appHandle, permissions);
+  console.log('Authorised by user. Auth URI:', authURI);
 
-  await window.safeApp.connectAuthorised(appToken, authURI);
-  console.log('Application is now registered in the network.');
+  await window.safeApp.connectAuthorised(appHandle, authURI);
+  console.log('Connected.');
 
-  return appToken;
+  return appHandle;
 }
 
-function safeCleanup(appToken): void {
+function safeCleanup(appHandle): void {
   // Make sure that SAFEApp instance is freed from memory.
-  if (appToken) {
-    window.safeApp.free(appToken);
+  if (appHandle) {
+    window.safeApp.free(appHandle);
     console.log('SAFEApp instance freed.');
   }
 }
@@ -36,7 +36,7 @@ type Props = {
 };
 
 type State = {
-  currAppToken: ?string,
+  currAppHandle: ?string,
 }
 
 class VisitorCounter extends Component<Props, State> {
@@ -47,30 +47,30 @@ class VisitorCounter extends Component<Props, State> {
   };
 
   state = {
-    currAppToken: undefined,
+    currAppHandle: undefined,
   };
 
   componentDidMount() {
     const { appConfig, permissions } = this.props;
 
     safeInit(appConfig, permissions)
-      .then((appToken) => {
-        console.log('VisitorCounter received token:', appToken);
-        this.setState({ currAppToken: appToken });
+      .then((appHandle) => {
+        console.log('VisitorCounter received appHandle:', appHandle);
+        this.setState({ currAppHandle: appHandle });
       })
       .catch((error) => console.log('Could not init:', error));
   }
 
   componentWillUnmount() {
-    safeCleanup(this.state.currAppToken);
+    safeCleanup(this.state.currAppHandle);
   }
 
   render() {
-    const { currAppToken } = this.state;
+    const { currAppHandle } = this.state;
 
     return (
       <div className="visitor-counter">
-        {`Token: ${currAppToken || 'N/A'}`}
+        {`Handle: ${currAppHandle || 'N/A'}`}
       </div>
     );
   }
