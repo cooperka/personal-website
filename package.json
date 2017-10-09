@@ -5,6 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:watch": "node scripts/watch-build.js",
     "build:snapshot": "react-scripts build && react-snapshot",
     "serve": "node server/app.js",
     "test": "react-scripts test --env=jsdom",
