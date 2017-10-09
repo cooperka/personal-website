@@ -5,13 +5,21 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-async function testMutableData(appHandle) {
-  const typeTag = 15001; // TODO: What is this? No documentation found.
-  const MUTABLE_DATA_ENTRIES = { key1: 'value1', key2: 'value2' };
+// Current network conventions:
+// * 15001 -> public id
+// * 15002 -> web service
+// * 15003 -> email service
+// https://forum.safedev.org/t/how-to-upload-a-file-to-the-network/800/6
+const TYPE_TAG = 15002;
 
-  const dataHandle = await window.safeMutableData.newRandomPublic(appHandle, typeTag);
+async function testMutableData(appHandle) {
+  const MUTABLE_DATA_ENTRIES = { visitCount: 0 };
+
+  const name = 'name-public-01010101010101010101';
+  const dataHandle = await window.safeMutableData.newPublic(appHandle, name, TYPE_TAG);
 
   await window.safeMutableData.quickSetup(dataHandle, MUTABLE_DATA_ENTRIES);
+
 
   const keys = await window.safeMutableData.getKeys(dataHandle);
 
