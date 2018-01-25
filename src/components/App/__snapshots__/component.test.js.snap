@@ -9,7 +9,7 @@ exports[`renders 1`] = `
   >
     <img
       alt="profile"
-      className="profile-photo"
+      className="profile-photo material z-depth-1"
       src="profile-2017-web@800.jpg"
     />
     <div
