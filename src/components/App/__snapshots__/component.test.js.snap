@@ -62,12 +62,6 @@ exports[`renders 1`] = `
       name="Tumblr"
       url="https://mentalmorsels.tumblr.com/"
     />
-    <SocialLink
-      icon="gmail-black.svg"
-      iconHover="gmail-color.svg"
-      name="Gmail"
-      url="mailto:cooperka92@gmail.com"
-    />
   </ul>
 </div>
 `;
