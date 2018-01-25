@@ -18,12 +18,12 @@ const SocialLink = (props: Props) => {
     <li className="social-link-item">
       <a className="social-link-anchor" href={url}>
         <img
-          className={['social-icon', 'first', 'black'].join(' ')}
+          className={['social-icon', 'dark'].join(' ')}
           src={icon}
           alt={name}
         />
         <img
-          className={['social-icon', 'color'].join(' ')}
+          className={['social-icon', 'colorful'].join(' ')}
           src={iconHover}
           alt={name}
         />

@@ -13,22 +13,19 @@
   transition: all .2s ease;
 }
 
-.social-icon.first {
+.social-icon.dark {
+  opacity: 1;
   position: absolute;
 }
-
-.social-icon.black {
-  opacity: 1;
-}
-.social-link-anchor:hover .social-icon.black {
+.social-link-anchor:hover .social-icon.dark {
   opacity: 0;
   transform: scale(1.1);
 }
 
-.social-icon.color {
+.social-icon.colorful {
   opacity: 0;
 }
-.social-link-anchor:hover .social-icon.color {
+.social-link-anchor:hover .social-icon.colorful {
   opacity: 1;
   transform: scale(1.1);
 }
