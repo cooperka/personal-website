@@ -38,5 +38,11 @@ export default [
     icon: require('./images/Tumblr-black.svg'),
     iconHover: require('./images/Tumblr-color.svg'),
   },
+  {
+    name: 'Gmail',
+    url: 'mailto:cooperka92@gmail.com',
+    icon: require('./images/gmail-black.svg'),
+    iconHover: require('./images/gmail-color.svg'),
+  },
 ];
 /* eslint-enable */
