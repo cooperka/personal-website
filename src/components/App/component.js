@@ -36,11 +36,20 @@ class App extends Component<Props> {
     );
   }
 
+  renderFooter() {
+    return (
+      <div className="footer">
+        <div>&copy; 2018 Kevin Cooper</div>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="App">
         {this.renderMainHeader()}
         {this.renderSocialLinks()}
+        {this.renderFooter()}
       </div>
     );
   }

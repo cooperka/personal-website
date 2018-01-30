@@ -74,5 +74,12 @@ exports[`renders 1`] = `
       url="https://mentalmorsels.tumblr.com/"
     />
   </ul>
+  <div
+    className="footer"
+  >
+    <div>
+      © 2018 Kevin Cooper
+    </div>
+  </div>
 </div>
 `;
