@@ -9,7 +9,8 @@ import SocialLink from '../SocialLink';
 
 import './styles.css';
 
-type Props = {};
+type Props = {
+};
 
 class App extends Component<Props> {
 
