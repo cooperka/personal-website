@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import profilePhoto from '../../images/profile-2017-web@800.jpg';
 import SOCIAL_LINKS from '../../socialLinks';
 
-import SocialLink from '../SocialLink';
+import SocialLink from '../SocialLink/component';
 
 import './styles.css';
 
