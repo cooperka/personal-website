@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "checkAll": "yarn run lint --fix && yarn run flow && yarn run test --updateSnapshot --watchAll=0",
+    "lint": "eslint . --ext .js",
+    "flow": "flow",
+    "test": "react-scripts test",
     "clean": "rm -rf build",
     "build": "yarn run clean && react-scripts build",
     "build:snapshot": "yarn run build && react-snapshot",
     "build:css": "node-sass src/vendor/ -o src/vendor/ && sed -i 's/\\.material \\./.material./' src/vendor/materialize/sass/materialize.css",
     "deploy": "yarn run build:snapshot && firebase deploy",
-    "test": "react-scripts test --env=jsdom",
-    "lint": "eslint . --ext .js,.jsx",
     "eject": "react-scripts eject"
   },
   "dependencies": {
