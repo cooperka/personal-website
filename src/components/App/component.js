@@ -45,7 +45,11 @@ class App extends Component<Props> {
   renderFooter() {
     return (
       <div className="footer">
-        <div>&copy; 2018 Kevin Cooper</div>
+        <div>
+          &copy; 2020 Kevin Cooper &bull;
+          {' '}
+          <a href="https://github.com/cooperka/personal-website">View source</a>
+        </div>
       </div>
     );
   }

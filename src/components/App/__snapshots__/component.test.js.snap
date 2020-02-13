@@ -150,7 +150,13 @@ exports[`renders 1`] = `
     className="footer"
   >
     <div>
-      © 2018 Kevin Cooper
+      © 2020 Kevin Cooper •
+       
+      <a
+        href="https://github.com/cooperka/personal-website"
+      >
+        View source
+      </a>
     </div>
   </div>
 </div>
