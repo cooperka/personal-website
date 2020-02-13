@@ -19,12 +19,9 @@ class App extends Component<Props> {
       <div className="main-header">
         <img className="profile-photo material z-depth-1" src={profilePhoto} alt="profile" />
         <div className="main-title">Kevin Cooper</div>
-        <div className="main-subtitle">Software Engineer</div>
-        <div className="main-subtitle">
-          {'I run '}
-          <a href="https://lsrfocus.com">LSR</a>
-          {', providing freelance software development and strategic planning.'}
-        </div>
+        <div className="main-subtitle">Software consultant/developer</div>
+        <div className="main-subtitle">Interested in social justice and ethical technology</div>
+        <div className="main-subtitle">Find out more:</div>
       </div>
     );
   }
