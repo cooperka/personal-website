@@ -10,7 +10,7 @@ See also [:sunglasses::cactus:.ws](http://😎🌵.ws) (don't judge, I like emoj
 
 1. `yarn install`
 2. `yarn start`
-    - It will automatically open <http://localhost:3000/> in your browser
+   - It will automatically open <http://localhost:3000/> in your browser
 3. `yarn test`
 
 ## Publishing
@@ -25,7 +25,9 @@ To locally build for production on Heroku:
 yarn run build
 ```
 
-It uses [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack) to serve the files.
+It uses
+[create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack)
+to serve the files.
 
 ### Firebase
 
@@ -43,5 +45,5 @@ To build locally for production:
 yarn run build:snapshot
 ```
 
-It uses [react-snapshot](https://github.com/geelen/react-snapshot)
-to generate static HTML pages that can be served much more easily.
+It uses [react-snapshot](https://github.com/geelen/react-snapshot) to generate
+static HTML pages that can be served much more easily.

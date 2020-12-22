@@ -9,17 +9,22 @@ import SocialLink from '../SocialLink/component';
 
 import './styles.css';
 
-type Props = {
-};
+type Props = {};
 
 class App extends Component<Props> {
   renderMainHeader() {
     return (
       <div className="main-header">
-        <img className="profile-photo material z-depth-1" src={profilePhoto} alt="profile" />
+        <img
+          className="profile-photo material z-depth-1"
+          src={profilePhoto}
+          alt="profile"
+        />
         <div className="main-title">Kevin Cooper</div>
         <div className="main-subtitle">Software consultant/developer</div>
-        <div className="main-subtitle">Interested in social justice and ethical technology</div>
+        <div className="main-subtitle">
+          Interested in social justice and ethical technology
+        </div>
         <div className="main-subtitle">Find out more:</div>
       </div>
     );
@@ -28,12 +33,16 @@ class App extends Component<Props> {
   renderSocialLinks() {
     return (
       <ul className="social-links">
-        {SOCIAL_LINKS.map(
-          (data, index) => (
+        {SOCIAL_LINKS.map((data, index) => (
+          <SocialLink
             // eslint-disable-next-line react/no-array-index-key
-            <SocialLink key={index} name={data.name} url={data.url} Icon={data.Icon} HoverIcon={data.HoverIcon} />
-          ),
-        )}
+            key={index}
+            name={data.name}
+            url={data.url}
+            Icon={data.Icon}
+            HoverIcon={data.HoverIcon}
+          />
+        ))}
       </ul>
     );
   }
@@ -42,8 +51,8 @@ class App extends Component<Props> {
     return (
       <div className="footer">
         <div>
-          &copy; 2020 Kevin Cooper &bull;
-          {' '}
+          {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+          &copy; 2020 Kevin Cooper &bull;{' '}
           <a href="https://github.com/cooperka/personal-website">View source</a>
         </div>
       </div>
