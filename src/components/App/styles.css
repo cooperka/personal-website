@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.main-header {
+.main-section {
   margin: 2em;
   margin-bottom: 0;
   color: #444;
@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: center;
   bottom: 0;
-  position:absolute;
+  position: absolute;
 }
 
 .footer div {

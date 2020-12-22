@@ -14,36 +14,38 @@ type Props = {};
 class App extends Component<Props> {
   renderMainHeader() {
     return (
-      <div className="main-header">
+      <div className="main-section">
         <img
           className="profile-photo material z-depth-1"
           src={profilePhoto}
           alt="profile"
         />
         <div className="main-title">Kevin Cooper</div>
-        <div className="main-subtitle">Software consultant/developer</div>
         <div className="main-subtitle">
-          Interested in social justice and ethical technology
+          Improv comedy. Social justice. Ethical technology. Software
+          consultant.
         </div>
-        <div className="main-subtitle">Find out more:</div>
       </div>
     );
   }
 
   renderSocialLinks() {
     return (
-      <ul className="social-links">
-        {SOCIAL_LINKS.map((data, index) => (
-          <SocialLink
-            // eslint-disable-next-line react/no-array-index-key
-            key={index}
-            name={data.name}
-            url={data.url}
-            Icon={data.Icon}
-            HoverIcon={data.HoverIcon}
-          />
-        ))}
-      </ul>
+      <div className="main-section">
+        <div className="main-subtitle">Find out more:</div>
+        <ul className="social-links">
+          {SOCIAL_LINKS.map((data, index) => (
+            <SocialLink
+              // eslint-disable-next-line react/no-array-index-key
+              key={index}
+              name={data.name}
+              url={data.url}
+              Icon={data.Icon}
+              HoverIcon={data.HoverIcon}
+            />
+          ))}
+        </ul>
+      </div>
     );
   }
 
