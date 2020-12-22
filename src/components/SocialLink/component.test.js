@@ -10,8 +10,8 @@ it('renders', () => {
     <SocialLink
       name="name"
       url="url"
-      icon="icon"
-      iconHover="iconHover"
+      Icon={() => 'icon'}
+      HoverIcon={() => 'hoverIcon'}
     />,
   );
   expect(tree.toJSON()).toMatchSnapshot();

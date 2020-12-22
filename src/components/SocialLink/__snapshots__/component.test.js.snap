@@ -8,16 +8,8 @@ exports[`renders 1`] = `
     className="social-link-anchor"
     href="url"
   >
-    <img
-      alt="name"
-      className="social-icon dark"
-      src="icon"
-    />
-    <img
-      alt="name"
-      className="social-icon colorful"
-      src="iconHover"
-    />
+    icon
+    hoverIcon
   </a>
 </li>
 `;
