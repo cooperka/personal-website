@@ -13,7 +13,6 @@ type Props = {
 };
 
 class App extends Component<Props> {
-
   renderMainHeader() {
     return (
       <div className="main-header">
@@ -60,7 +59,6 @@ class App extends Component<Props> {
       </div>
     );
   }
-
 }
 
 export default App;
