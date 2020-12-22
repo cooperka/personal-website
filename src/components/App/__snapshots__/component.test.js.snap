@@ -29,10 +29,61 @@ exports[`renders 1`] = `
     <div
       className="main-subtitle"
     >
+      Hosted projects:
+    </div>
+    <ul
+      className="links"
+    >
+      <li
+        className="project-link-item"
+      >
+        <div
+          className="title"
+        >
+          <a
+            className="project-link-anchor"
+            href="https://piano.cooperka.com/"
+          >
+            Two-Hand Piano
+          </a>
+        </div>
+        <div
+          className="subtitle"
+        >
+          Web piano built with Tone.js
+        </div>
+      </li>
+      <li
+        className="project-link-item"
+      >
+        <div
+          className="title"
+        >
+          <a
+            className="project-link-anchor"
+            href="https://name.cooperka.com/"
+          >
+            NeuroName
+          </a>
+        </div>
+        <div
+          className="subtitle"
+        >
+          Game to improve your memory by matching celebrity names to faces.
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="main-section"
+  >
+    <div
+      className="main-subtitle"
+    >
       Find out more:
     </div>
     <ul
-      className="social-links"
+      className="links"
     >
       <SocialLink
         HoverIcon={

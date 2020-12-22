@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<li
+  className="project-link-item"
+>
+  <div
+    className="title"
+  >
+    <a
+      className="project-link-anchor"
+      href="url"
+    >
+      name
+    </a>
+  </div>
+  <div
+    className="subtitle"
+  >
+    description
+  </div>
+</li>
+`;
