@@ -4,11 +4,15 @@ exports[`renders 1`] = `
 <div
   className="main-section"
 >
-  <img
-    alt="profile"
-    className="profile-photo"
-    src="profile-2017-web@800.jpg"
-  />
+  <div
+    className="MuiBox-root MuiBox-root-1 profile-photo"
+  >
+    <img
+      alt="profile"
+      className="profile-photo"
+      src="profile-2017-web@800.jpg"
+    />
+  </div>
   <div
     className="main-title"
   >

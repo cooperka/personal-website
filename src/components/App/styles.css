@@ -11,6 +11,9 @@
 }
 
 .profile-photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 16em;
   height: 16em;
   border-radius: 8em;
 }
