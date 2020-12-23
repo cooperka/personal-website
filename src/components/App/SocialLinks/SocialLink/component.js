@@ -25,8 +25,8 @@ const SocialLink = ({ name, url, icon, iconHover }) => {
 SocialLink.propTypes = {
   name: PropTypes.string,
   url: PropTypes.string,
-  icon: PropTypes.object,
-  iconHover: PropTypes.object,
+  icon: PropTypes.string,
+  iconHover: PropTypes.string,
 };
 
 export default SocialLink;

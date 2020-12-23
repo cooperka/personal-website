@@ -19,18 +19,16 @@ exports[`renders 1`] = `
         className="social-link-anchor"
         href="https://github.com/cooperka"
       >
-        <svg
+        <img
+          alt="GitHub"
           className="social-icon dark"
-          title="GitHub"
-        >
-          Github-black.svg
-        </svg>
-        <svg
+          src="Github-black.svg"
+        />
+        <img
+          alt="GitHub"
           className="social-icon colorful"
-          title="GitHub"
-        >
-          Github-color.svg
-        </svg>
+          src="Github-color.svg"
+        />
       </a>
     </li>
     <li
@@ -40,18 +38,16 @@ exports[`renders 1`] = `
         className="social-link-anchor"
         href="https://www.linkedin.com/in/cooperka92"
       >
-        <svg
+        <img
+          alt="LinkedIn"
           className="social-icon dark"
-          title="LinkedIn"
-        >
-          LinkedIn-black.svg
-        </svg>
-        <svg
+          src="LinkedIn-black.svg"
+        />
+        <img
+          alt="LinkedIn"
           className="social-icon colorful"
-          title="LinkedIn"
-        >
-          LinkedIn-color.svg
-        </svg>
+          src="LinkedIn-color.svg"
+        />
       </a>
     </li>
     <li
@@ -61,18 +57,16 @@ exports[`renders 1`] = `
         className="social-link-anchor"
         href="https://medium.com/@cooperka"
       >
-        <svg
+        <img
+          alt="Medium"
           className="social-icon dark"
-          title="Medium"
-        >
-          Medium-black.svg
-        </svg>
-        <svg
+          src="Medium-black.svg"
+        />
+        <img
+          alt="Medium"
           className="social-icon colorful"
-          title="Medium"
-        >
-          Medium-color.svg
-        </svg>
+          src="Medium-color.svg"
+        />
       </a>
     </li>
     <li
@@ -82,18 +76,16 @@ exports[`renders 1`] = `
         className="social-link-anchor"
         href="https://www.facebook.com/cooperka"
       >
-        <svg
+        <img
+          alt="Facebook"
           className="social-icon dark"
-          title="Facebook"
-        >
-          Facebook-black.svg
-        </svg>
-        <svg
+          src="Facebook-black.svg"
+        />
+        <img
+          alt="Facebook"
           className="social-icon colorful"
-          title="Facebook"
-        >
-          Facebook-color.svg
-        </svg>
+          src="Facebook-color.svg"
+        />
       </a>
     </li>
     <li
@@ -103,18 +95,16 @@ exports[`renders 1`] = `
         className="social-link-anchor"
         href="https://twitter.com/cooperka92"
       >
-        <svg
+        <img
+          alt="Twitter"
           className="social-icon dark"
-          title="Twitter"
-        >
-          Twitter-black.svg
-        </svg>
-        <svg
+          src="Twitter-black.svg"
+        />
+        <img
+          alt="Twitter"
           className="social-icon colorful"
-          title="Twitter"
-        >
-          Twitter-color.svg
-        </svg>
+          src="Twitter-color.svg"
+        />
       </a>
     </li>
     <li
@@ -124,18 +114,16 @@ exports[`renders 1`] = `
         className="social-link-anchor"
         href="https://mentalmorsels.tumblr.com/"
       >
-        <svg
+        <img
+          alt="Tumblr"
           className="social-icon dark"
-          title="Tumblr"
-        >
-          Tumblr-black.svg
-        </svg>
-        <svg
+          src="Tumblr-black.svg"
+        />
+        <img
+          alt="Tumblr"
           className="social-icon colorful"
-          title="Tumblr"
-        >
-          Tumblr-color.svg
-        </svg>
+          src="Tumblr-color.svg"
+        />
       </a>
     </li>
   </ul>
