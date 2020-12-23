@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="footer"
+>
+  <div>
+    © 2020 Kevin Cooper •
+     
+    <a
+      href="https://github.com/cooperka/personal-website"
+    >
+      View source
+    </a>
+  </div>
+</div>
+`;

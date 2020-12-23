@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<div
+  className="main-section"
+>
+  <div
+    className="main-subtitle"
+  >
+    Find out more:
+  </div>
+  <ul
+    className="links"
+  >
+    <li
+      className="social-link-item"
+    >
+      <a
+        className="social-link-anchor"
+        href="https://github.com/cooperka"
+      >
+        <svg
+          className="social-icon dark"
+          title="GitHub"
+        >
+          Github-black.svg
+        </svg>
+        <svg
+          className="social-icon colorful"
+          title="GitHub"
+        >
+          Github-color.svg
+        </svg>
+      </a>
+    </li>
+    <li
+      className="social-link-item"
+    >
+      <a
+        className="social-link-anchor"
+        href="https://www.linkedin.com/in/cooperka92"
+      >
+        <svg
+          className="social-icon dark"
+          title="LinkedIn"
+        >
+          LinkedIn-black.svg
+        </svg>
+        <svg
+          className="social-icon colorful"
+          title="LinkedIn"
+        >
+          LinkedIn-color.svg
+        </svg>
+      </a>
+    </li>
+    <li
+      className="social-link-item"
+    >
+      <a
+        className="social-link-anchor"
+        href="https://medium.com/@cooperka"
+      >
+        <svg
+          className="social-icon dark"
+          title="Medium"
+        >
+          Medium-black.svg
+        </svg>
+        <svg
+          className="social-icon colorful"
+          title="Medium"
+        >
+          Medium-color.svg
+        </svg>
+      </a>
+    </li>
+    <li
+      className="social-link-item"
+    >
+      <a
+        className="social-link-anchor"
+        href="https://www.facebook.com/cooperka"
+      >
+        <svg
+          className="social-icon dark"
+          title="Facebook"
+        >
+          Facebook-black.svg
+        </svg>
+        <svg
+          className="social-icon colorful"
+          title="Facebook"
+        >
+          Facebook-color.svg
+        </svg>
+      </a>
+    </li>
+    <li
+      className="social-link-item"
+    >
+      <a
+        className="social-link-anchor"
+        href="https://twitter.com/cooperka92"
+      >
+        <svg
+          className="social-icon dark"
+          title="Twitter"
+        >
+          Twitter-black.svg
+        </svg>
+        <svg
+          className="social-icon colorful"
+          title="Twitter"
+        >
+          Twitter-color.svg
+        </svg>
+      </a>
+    </li>
+    <li
+      className="social-link-item"
+    >
+      <a
+        className="social-link-anchor"
+        href="https://mentalmorsels.tumblr.com/"
+      >
+        <svg
+          className="social-icon dark"
+          title="Tumblr"
+        >
+          Tumblr-black.svg
+        </svg>
+        <svg
+          className="social-icon colorful"
+          title="Tumblr"
+        >
+          Tumblr-color.svg
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+`;
