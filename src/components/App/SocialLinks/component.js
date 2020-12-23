@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react';
 
 import SOCIAL_LINKS from '../../../socialLinks';

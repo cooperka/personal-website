@@ -1,6 +1,4 @@
-// @flow
-
-import React, { Component } from 'react';
+import React from 'react';
 import { compose } from 'ramda';
 import {
   createMuiTheme,
@@ -20,23 +18,19 @@ import './styles.css';
 
 const muiTheme = createMuiTheme(theme);
 
-type Props = {};
-
-class App extends Component<Props> {
-  render() {
-    return (
-      <MuiThemeProvider theme={muiTheme}>
-        <CssBaseline />
-        <div className="App">
-          <MainHeader />
-          <ProjectLinks />
-          <SocialLinks />
-          <Footer />
-        </div>
-      </MuiThemeProvider>
-    );
-  }
-}
+const App = () => {
+  return (
+    <MuiThemeProvider theme={muiTheme}>
+      <CssBaseline />
+      <div className="App">
+        <MainHeader />
+        <ProjectLinks />
+        <SocialLinks />
+        <Footer />
+      </div>
+    </MuiThemeProvider>
+  );
+};
 
 const styles = {};
 

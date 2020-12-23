@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "checkAll": "yarn run lint --fix && yarn run flow && yarn run test --updateSnapshot --watchAll=0",
+    "checkAll": "yarn run lint --fix && yarn run test --updateSnapshot --watchAll=0",
     "format": "prettier --write 'src/**/*.js' --write '*.md'",
     "lint": "eslint --ext .js .",
-    "flow": "flow",
     "test": "react-scripts test",
     "clean": "rm -rf build",
     "build": "yarn run clean && react-scripts build",
@@ -15,19 +14,10 @@
     "deploy": "yarn run build:snapshot && firebase deploy",
     "eject": "react-scripts eject"
   },
-  "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "proseWrap": "always"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  },
   "dependencies": {
     "@material-ui/core": "4.11.2",
     "fontsource-roboto": "3.1.5",
+    "prop-types": "15.7.2",
     "ramda": "0.27.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -43,14 +33,22 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "4.0.0",
     "firebase-tools": "9.1.0",
-    "flow-bin": "0.83.0",
-    "flow-typed": "2.5.1",
     "husky": "4.3.6",
     "lsr-tooling": "1.1.0",
     "prettier": "2.2.1",
     "pretty-quick": "3.1.0",
     "react-scripts": "4.0.1",
     "react-test-renderer": "17.0.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "proseWrap": "always"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "browserslist": [
     ">0.2%",

@@ -1,5 +1,3 @@
-// @flow
-
 import { ReactComponent as blackGithub } from './images/Github-black.svg';
 import { ReactComponent as colorGithub } from './images/Github-color.svg';
 import { ReactComponent as blackLinkedIn } from './images/LinkedIn-black.svg';

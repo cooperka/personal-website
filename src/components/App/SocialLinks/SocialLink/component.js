@@ -1,19 +1,9 @@
-// @flow
-
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
-type Props = {
-  name: string,
-  url: string,
-  Icon: React.Node,
-  HoverIcon: React.Node,
-};
-
-const SocialLink = (props: Props) => {
-  const { name, url, Icon, HoverIcon } = props;
-
+const SocialLink = ({ name, url, Icon, HoverIcon }) => {
   return (
     <li className="social-link-item">
       <a className="social-link-anchor" href={url}>
@@ -25,6 +15,13 @@ const SocialLink = (props: Props) => {
       </a>
     </li>
   );
+};
+
+SocialLink.propTypes = {
+  name: PropTypes.string,
+  url: PropTypes.string,
+  Icon: PropTypes.node,
+  HoverIcon: PropTypes.node,
 };
 
 export default SocialLink;

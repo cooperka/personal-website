@@ -1,18 +1,9 @@
-// @flow
-
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
-type Props = {
-  name: string,
-  description: string,
-  url: string,
-};
-
-const ProjectLink = (props: Props) => {
-  const { name, description, url } = props;
-
+const ProjectLink = ({ name, description, url }) => {
   return (
     <li className="project-link-item">
       <div className="title">
@@ -23,6 +14,12 @@ const ProjectLink = (props: Props) => {
       <div className="subtitle">{description}</div>
     </li>
   );
+};
+
+ProjectLink.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  url: PropTypes.string,
 };
 
 export default ProjectLink;

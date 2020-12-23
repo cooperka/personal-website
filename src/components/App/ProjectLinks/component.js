@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react';
 
 import PROJECT_LINKS from '../../../projectLinks';

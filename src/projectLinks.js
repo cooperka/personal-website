@@ -1,5 +1,3 @@
-// @flow
-
 export default [
   {
     name: 'Two-Hand Piano',
