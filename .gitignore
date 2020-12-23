@@ -1,28 +1,30 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
 # Dependencies.
 node_modules/
 
-# Testing.
-coverage/
+# Secrets.
+.env
 
 # Build artifacts.
 lib/
 build/
 dist/
+artifacts/
 tmp/
 out/
 .firebase/
 
-# Various metadata.
-.DS_Store
-.env
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-.eslintcache
+# Testing.
+coverage/
 
-# IntelliJ personal data.
-**/.idea/dictionaries/
-**/.idea/libraries/
-**/.idea/tasks.xml
-**/.idea/workspace.xml
+# Logs.
+*.log
+
+# IDE files.
+.idea/*
+!.idea/runConfigurations
+
+# Misc.
+.DS_Store
+.eslintcache

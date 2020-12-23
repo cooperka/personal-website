@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import './styles.css';
 
 const SocialLink = ({ name, url, Icon, HoverIcon }) => {
+  // TODO: Fix broken SVG imports.
+  if (!Icon) return null;
+
   return (
     <li className="social-link-item">
       <a className="social-link-anchor" href={url}>
