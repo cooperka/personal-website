@@ -5,7 +5,10 @@ import renderer from 'react-test-renderer';
 
 import App from './component';
 
-jest.mock('../SocialLink/component', () => 'SocialLink');
+jest.mock('./MainHeader/component', () => 'MainHeader');
+jest.mock('./SocialLinks/component', () => 'SocialLinks');
+jest.mock('./ProjectLinks/component', () => 'ProjectLinks');
+jest.mock('./Footer/component', () => 'Footer');
 
 it('renders', () => {
   const tree = renderer.create(<App />);
