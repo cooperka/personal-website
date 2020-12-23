@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const SocialLink = ({ name, url, Icon, HoverIcon }) => {
-  // TODO: Fix broken SVG imports.
-  if (!Icon) return null;
-
+const SocialLink = ({ name, url, icon, iconHover }) => {
   return (
     <li className="social-link-item">
       <a className="social-link-anchor" href={url}>
-        <Icon className={['social-icon', 'dark'].join(' ')} title={name} />
-        <HoverIcon
+        <img
+          className={['social-icon', 'dark'].join(' ')}
+          src={icon}
+          alt={name}
+        />
+        <img
           className={['social-icon', 'colorful'].join(' ')}
-          title={name}
+          src={iconHover}
+          alt={name}
         />
       </a>
     </li>
@@ -23,8 +25,8 @@ const SocialLink = ({ name, url, Icon, HoverIcon }) => {
 SocialLink.propTypes = {
   name: PropTypes.string,
   url: PropTypes.string,
-  Icon: PropTypes.node,
-  HoverIcon: PropTypes.node,
+  icon: PropTypes.object,
+  iconHover: PropTypes.object,
 };
 
 export default SocialLink;

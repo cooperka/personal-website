@@ -5,12 +5,7 @@ import SocialLink from './component';
 
 it('renders', () => {
   const tree = renderer.create(
-    <SocialLink
-      name="name"
-      url="url"
-      Icon={() => 'icon'}
-      HoverIcon={() => 'hoverIcon'}
-    />,
+    <SocialLink name="name" url="url" icon="icon" iconHover="iconHover" />,
   );
   expect(tree.toJSON()).toMatchSnapshot();
 });
