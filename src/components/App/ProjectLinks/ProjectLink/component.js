@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography, Card, CardContent } from '@material-ui/core';
 
-const useStyles = makeStyles({
-  listItem: {
-    display: 'inline-block',
+const useStyles = makeStyles((theme) => ({
+  container: {
+    width: 320,
+    margin: theme.spacing(1),
   },
   anchor: {
     margin: 5,
@@ -14,23 +15,22 @@ const useStyles = makeStyles({
   title: {
     fontSize: 18,
   },
-  subtitle: {
-    fontSize: 14,
-  },
-});
+}));
 
 const ProjectLink = ({ name, description, url }) => {
   const classes = useStyles();
 
   return (
-    <li className={classes.listItem}>
-      <div className={classes.title}>
-        <a className={classes.anchor} href={url}>
-          {name}
-        </a>
-      </div>
-      <div className={classes.subtitle}>{description}</div>
-    </li>
+    <Card className={classes.container}>
+      <CardContent>
+        <Typography className={classes.title}>
+          <a className={classes.anchor} href={url}>
+            {name}
+          </a>
+        </Typography>
+        <Typography variant="body2">{description}</Typography>
+      </CardContent>
+    </Card>
   );
 };
 

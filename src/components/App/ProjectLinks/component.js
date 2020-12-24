@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
     marginTop: 0,
     padding: 0,
-    listStyle: 'none',
+    display: 'flex',
+    justifyContent: 'center',
   },
 }));
 
@@ -24,12 +25,12 @@ const ProjectLinks = () => {
   return (
     <div className={classes.section}>
       <Typography variant="h5">Hosted projects:</Typography>
-      <ul className={classes.links}>
+      <div className={classes.links}>
         {PROJECT_LINKS.map((link, index) => (
           // eslint-disable-next-line react/no-array-index-key
           <ProjectLink {...link} key={index} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

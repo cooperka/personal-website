@@ -9,47 +9,55 @@ exports[`renders 1`] = `
   >
     Hosted projects:
   </h5>
-  <ul
+  <div
     className="makeStyles-links-2"
   >
-    <li
-      className="makeStyles-listItem-3"
+    <div
+      className="MuiPaper-root MuiCard-root makeStyles-container-3 MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="makeStyles-title-5"
+        className="MuiCardContent-root"
       >
-        <a
-          className="makeStyles-anchor-4"
-          href="https://piano.cooperka.com/"
+        <p
+          className="MuiTypography-root makeStyles-title-5 MuiTypography-body1"
         >
-          Two-Hand Piano
-        </a>
+          <a
+            className="makeStyles-anchor-4"
+            href="https://piano.cooperka.com/"
+          >
+            Two-Hand Piano
+          </a>
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          Web piano built with Tone.js
+        </p>
       </div>
-      <div
-        className="makeStyles-subtitle-6"
-      >
-        Web piano built with Tone.js
-      </div>
-    </li>
-    <li
-      className="makeStyles-listItem-3"
+    </div>
+    <div
+      className="MuiPaper-root MuiCard-root makeStyles-container-3 MuiPaper-elevation1 MuiPaper-rounded"
     >
       <div
-        className="makeStyles-title-5"
+        className="MuiCardContent-root"
       >
-        <a
-          className="makeStyles-anchor-4"
-          href="https://name.cooperka.com/"
+        <p
+          className="MuiTypography-root makeStyles-title-5 MuiTypography-body1"
         >
-          NeuroName
-        </a>
+          <a
+            className="makeStyles-anchor-4"
+            href="https://name.cooperka.com/"
+          >
+            NeuroName
+          </a>
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          Game to improve your memory by matching celebrity names to faces.
+        </p>
       </div>
-      <div
-        className="makeStyles-subtitle-6"
-      >
-        Game to improve your memory by matching celebrity names to faces.
-      </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
 `;

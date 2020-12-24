@@ -1,23 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders 1`] = `
-<li
-  className="makeStyles-listItem-1"
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-container-1 MuiPaper-elevation1 MuiPaper-rounded"
 >
   <div
-    className="makeStyles-title-3"
+    className="MuiCardContent-root"
   >
-    <a
-      className="makeStyles-anchor-2"
-      href="url"
+    <p
+      className="MuiTypography-root makeStyles-title-3 MuiTypography-body1"
     >
-      name
-    </a>
+      <a
+        className="makeStyles-anchor-2"
+        href="url"
+      >
+        name
+      </a>
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body2"
+    >
+      description
+    </p>
   </div>
-  <div
-    className="makeStyles-subtitle-4"
-  >
-    description
-  </div>
-</li>
+</div>
 `;
