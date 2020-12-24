@@ -7,7 +7,7 @@ exports[`renders 1`] = `
   <h5
     className="MuiTypography-root MuiTypography-h5"
   >
-    Hosted projects:
+    Hosted projects
   </h5>
   <div
     className="makeStyles-links-2"

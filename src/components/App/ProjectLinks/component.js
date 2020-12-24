@@ -24,7 +24,7 @@ const ProjectLinks = () => {
 
   return (
     <div className={classes.section}>
-      <Typography variant="h5">Hosted projects:</Typography>
+      <Typography variant="h5">Hosted projects</Typography>
       <div className={classes.links}>
         {PROJECT_LINKS.map((link, index) => (
           // eslint-disable-next-line react/no-array-index-key
