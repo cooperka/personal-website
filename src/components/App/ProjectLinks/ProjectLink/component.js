@@ -1,17 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { makeStyles } from '@material-ui/core';
 
-import './styles.css';
+const useStyles = makeStyles({
+  listItem: {
+    display: 'inline-block',
+  },
+  anchor: {
+    margin: 5,
+    padding: 5,
+    display: 'inline-block',
+  },
+  title: {
+    fontSize: 18,
+  },
+  subtitle: {
+    fontSize: 14,
+  },
+});
 
 const ProjectLink = ({ name, description, url }) => {
+  const classes = useStyles();
+
   return (
-    <li className="project-link-item">
-      <div className="title">
-        <a className="project-link-anchor" href={url}>
+    <li className={classes.listItem}>
+      <div className={classes.title}>
+        <a className={classes.anchor} href={url}>
           {name}
         </a>
       </div>
-      <div className="subtitle">{description}</div>
+      <div className={classes.subtitle}>{description}</div>
     </li>
   );
 };

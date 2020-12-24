@@ -1,10 +1,9 @@
 import React from 'react';
-import { compose } from 'ramda';
 import {
   createMuiTheme,
   MuiThemeProvider,
   CssBaseline,
-  withStyles,
+  makeStyles,
 } from '@material-ui/core';
 
 import MainHeader from './MainHeader/component';
@@ -14,15 +13,24 @@ import Footer from './Footer/component';
 
 import 'fontsource-roboto';
 import theme from './theme';
-import './styles.css';
 
 const muiTheme = createMuiTheme(theme);
 
+const useStyles = makeStyles({
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+  },
+});
+
 const App = () => {
+  const classes = useStyles();
+
   return (
     <MuiThemeProvider theme={muiTheme}>
       <CssBaseline />
-      <div className="App">
+      <div className={classes.container}>
         <MainHeader />
         <ProjectLinks />
         <SocialLinks />
@@ -32,6 +40,4 @@ const App = () => {
   );
 };
 
-const styles = {};
-
-export default compose(withStyles(styles))(App);
+export default App;
