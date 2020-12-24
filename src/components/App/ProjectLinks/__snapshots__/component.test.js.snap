@@ -4,11 +4,11 @@ exports[`renders 1`] = `
 <div
   className="makeStyles-section-1"
 >
-  <h2
-    className="MuiTypography-root MuiTypography-h2"
+  <h5
+    className="MuiTypography-root MuiTypography-h5"
   >
     Hosted projects:
-  </h2>
+  </h5>
   <ul
     className="makeStyles-links-2"
   >

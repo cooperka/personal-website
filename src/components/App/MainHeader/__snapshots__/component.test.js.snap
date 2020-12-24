@@ -13,15 +13,15 @@ exports[`renders 1`] = `
       src="profile-2017-web@800.jpg"
     />
   </div>
-  <h1
-    className="MuiTypography-root MuiTypography-h1"
-  >
-    Kevin Cooper
-  </h1>
   <h2
     className="MuiTypography-root MuiTypography-h2"
   >
-    Improv comedy. Social justice. Ethical technology. Software consultant.
+    Kevin Cooper
   </h2>
+  <h5
+    className="MuiTypography-root MuiTypography-h5"
+  >
+    Improv comedy. Social justice. Ethical technology. Software consultant.
+  </h5>
 </div>
 `;

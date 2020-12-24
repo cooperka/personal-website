@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className={classes.container}>
-      <Typography>
+      <Typography variant="body2">
         {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
         &copy; 2020 Kevin Cooper &bull;{' '}
         <a href="https://github.com/cooperka/personal-website">View source</a>

@@ -30,8 +30,8 @@ const MainHeader = () => {
           alt="profile"
         />
       </Box>
-      <Typography variant="h1">Kevin Cooper</Typography>
-      <Typography variant="h2">
+      <Typography variant="h2">Kevin Cooper</Typography>
+      <Typography variant="h5">
         Improv comedy. Social justice. Ethical technology. Software consultant.
       </Typography>
     </div>

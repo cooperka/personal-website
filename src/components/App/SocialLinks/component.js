@@ -23,7 +23,7 @@ const SocialLinks = () => {
 
   return (
     <div className={classes.section}>
-      <Typography variant="h2">Find out more:</Typography>
+      <Typography variant="h5">Find out more:</Typography>
       <ul className={classes.links}>
         {SOCIAL_LINKS.map((link, index) => (
           // eslint-disable-next-line react/no-array-index-key
