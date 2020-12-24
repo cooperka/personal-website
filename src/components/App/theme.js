@@ -7,8 +7,9 @@ export default {
   props: {
     MuiTypography: {
       variantMapping: {
-        h2: 'h1',
+        h3: 'h1',
         h5: 'h2',
+        h6: 'h2',
       },
     },
   },
