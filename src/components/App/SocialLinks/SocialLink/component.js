@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   listItem: {
     display: 'inline-block',
   },
   anchor: {
-    margin: 5,
-    padding: 5,
+    margin: theme.spacing(1),
+    marginTop: 0,
+    padding: theme.spacing(1),
     display: 'inline-block',
     '&:hover': {
       WebkitFilter: 'drop-shadow(0 3px 3px rgba(0, 0, 0, 0.23))',
@@ -34,7 +35,7 @@ const useStyles = makeStyles({
   colorful: {
     opacity: 0,
   },
-});
+}));
 
 const SocialLink = ({ name, url, icon, iconHover }) => {
   const classes = useStyles();
