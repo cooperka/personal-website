@@ -1,9 +1,14 @@
-// @flow
-
 import React from 'react';
+import { createGenerateClassName } from '@material-ui/core/styles';
+
+const generateClassName = createGenerateClassName();
 
 // Docs: https://github.com/react-static/react-static/blob/master/docs/config.md
 export default {
+  plugins: [
+    ['react-static-plugin-jss', { providerProps: { generateClassName } }],
+  ],
+
   siteRoot: 'https://cooperka.com',
 
   getRoutes: () => [
