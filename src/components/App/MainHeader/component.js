@@ -3,7 +3,7 @@ import { makeStyles, Typography, Box } from '@material-ui/core';
 
 import profilePhoto from '../../../images/profile-2017-web@800.jpg';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   profilePhoto: {
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -12,11 +12,11 @@ const useStyles = makeStyles({
     borderRadius: 80,
   },
   section: {
-    margin: 10,
+    margin: theme.spacing(2),
     marginBottom: 0,
     color: '#444',
   },
-});
+}));
 
 const MainHeader = () => {
   const classes = useStyles();

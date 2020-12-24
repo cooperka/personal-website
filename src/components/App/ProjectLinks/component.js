@@ -4,19 +4,19 @@ import { makeStyles, Typography } from '@material-ui/core';
 import PROJECT_LINKS from '../../../projectLinks';
 import ProjectLink from './ProjectLink/component';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   section: {
-    margin: 10,
+    margin: theme.spacing(2),
     marginBottom: 0,
     color: '#444',
   },
   links: {
-    margin: 10,
+    margin: theme.spacing(2),
     marginTop: 0,
     padding: 0,
     listStyle: 'none',
   },
-});
+}));
 
 const ProjectLinks = () => {
   const classes = useStyles();

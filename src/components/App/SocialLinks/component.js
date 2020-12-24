@@ -4,19 +4,19 @@ import { makeStyles, Typography } from '@material-ui/core';
 import SOCIAL_LINKS from '../../../socialLinks';
 import SocialLink from './SocialLink/component';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   section: {
-    margin: 10,
+    margin: theme.spacing(2),
     marginBottom: 0,
     color: '#444',
   },
   links: {
-    margin: 10,
+    margin: theme.spacing(2),
     marginTop: 0,
     padding: 0,
     listStyle: 'none',
   },
-});
+}));
 
 const SocialLinks = () => {
   const classes = useStyles();
