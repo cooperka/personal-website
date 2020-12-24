@@ -48,7 +48,15 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all",
-    "proseWrap": "always"
+    "proseWrap": "always",
+    "overrides": [
+      {
+        "files": "static.config.js",
+        "options": {
+          "printWidth": 120
+        }
+      }
+    ]
   },
   "husky": {
     "hooks": {
