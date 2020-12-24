@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, Typography, Box } from '@material-ui/core';
 
-import profilePhoto from '../../../images/profile-2017-web@800.jpg';
+import profilePhoto from '../../../images/profile-2017.jpg';
 
 const useStyles = makeStyles((theme) => ({
   profilePhoto: {

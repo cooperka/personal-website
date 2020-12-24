@@ -10,7 +10,7 @@ exports[`renders 1`] = `
     <img
       alt="profile"
       className="makeStyles-profilePhoto-1"
-      src="profile-2017-web@800.jpg"
+      src="profile-2017.jpg"
     />
   </div>
   <h3
