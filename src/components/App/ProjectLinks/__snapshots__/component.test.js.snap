@@ -2,50 +2,50 @@
 
 exports[`renders 1`] = `
 <div
-  className="main-section"
+  className="makeStyles-section-1"
 >
-  <div
-    className="main-subtitle"
+  <h2
+    className="MuiTypography-root MuiTypography-h2"
   >
     Hosted projects:
-  </div>
+  </h2>
   <ul
-    className="links"
+    className="makeStyles-links-2"
   >
     <li
-      className="project-link-item"
+      className="makeStyles-listItem-3"
     >
       <div
-        className="title"
+        className="makeStyles-title-5"
       >
         <a
-          className="project-link-anchor"
+          className="makeStyles-anchor-4"
           href="https://piano.cooperka.com/"
         >
           Two-Hand Piano
         </a>
       </div>
       <div
-        className="subtitle"
+        className="makeStyles-subtitle-6"
       >
         Web piano built with Tone.js
       </div>
     </li>
     <li
-      className="project-link-item"
+      className="makeStyles-listItem-3"
     >
       <div
-        className="title"
+        className="makeStyles-title-5"
       >
         <a
-          className="project-link-anchor"
+          className="makeStyles-anchor-4"
           href="https://name.cooperka.com/"
         >
           NeuroName
         </a>
       </div>
       <div
-        className="subtitle"
+        className="makeStyles-subtitle-6"
       >
         Game to improve your memory by matching celebrity names to faces.
       </div>

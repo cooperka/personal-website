@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 import PROJECT_LINKS from '../../../projectLinks';
 import ProjectLink from './ProjectLink/component';
@@ -9,10 +9,6 @@ const useStyles = makeStyles({
     margin: 10,
     marginBottom: 0,
     color: '#444',
-  },
-  mainSubtitle: {
-    margin: 10,
-    fontSize: 22,
   },
   links: {
     margin: 10,
@@ -27,7 +23,7 @@ const ProjectLinks = () => {
 
   return (
     <div className={classes.section}>
-      <div className={classes.mainSubtitle}>Hosted projects:</div>
+      <Typography variant="h2">Hosted projects:</Typography>
       <ul className={classes.links}>
         {PROJECT_LINKS.map((link, index) => (
           // eslint-disable-next-line react/no-array-index-key

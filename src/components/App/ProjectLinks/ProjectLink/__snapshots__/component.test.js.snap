@@ -2,20 +2,20 @@
 
 exports[`renders 1`] = `
 <li
-  className="project-link-item"
+  className="makeStyles-listItem-1"
 >
   <div
-    className="title"
+    className="makeStyles-title-3"
   >
     <a
-      className="project-link-anchor"
+      className="makeStyles-anchor-2"
       href="url"
     >
       name
     </a>
   </div>
   <div
-    className="subtitle"
+    className="makeStyles-subtitle-4"
   >
     description
   </div>

@@ -2,26 +2,26 @@
 
 exports[`renders 1`] = `
 <div
-  className="main-section"
+  className="makeStyles-section-2"
 >
   <div
-    className="MuiBox-root MuiBox-root-1 profile-photo"
+    className="MuiBox-root MuiBox-root-3 makeStyles-profilePhoto-1"
   >
     <img
       alt="profile"
-      className="profile-photo"
+      className="makeStyles-profilePhoto-1"
       src="profile-2017-web@800.jpg"
     />
   </div>
-  <div
-    className="main-title"
+  <h1
+    className="MuiTypography-root MuiTypography-h1"
   >
     Kevin Cooper
-  </div>
-  <div
-    className="main-subtitle"
+  </h1>
+  <h2
+    className="MuiTypography-root MuiTypography-h2"
   >
     Improv comedy. Social justice. Ethical technology. Software consultant.
-  </div>
+  </h2>
 </div>
 `;

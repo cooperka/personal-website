@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Box } from '@material-ui/core';
+import { makeStyles, Typography, Box } from '@material-ui/core';
 
 import profilePhoto from '../../../images/profile-2017-web@800.jpg';
 
@@ -16,14 +16,6 @@ const useStyles = makeStyles({
     marginBottom: 0,
     color: '#444',
   },
-  mainTitle: {
-    margin: 10,
-    fontSize: 50,
-  },
-  mainSubtitle: {
-    margin: 10,
-    fontSize: 22,
-  },
 });
 
 const MainHeader = () => {
@@ -38,10 +30,10 @@ const MainHeader = () => {
           alt="profile"
         />
       </Box>
-      <div className={classes.mainTitle}>Kevin Cooper</div>
-      <div className={classes.mainSubtitle}>
+      <Typography variant="h1">Kevin Cooper</Typography>
+      <Typography variant="h2">
         Improv comedy. Social justice. Ethical technology. Software consultant.
-      </div>
+      </Typography>
     </div>
   );
 };

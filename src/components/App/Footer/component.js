@@ -1,8 +1,8 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
-  footerContainer: {
+  container: {
     width: '100%',
     height: 40,
     display: 'flex',
@@ -12,22 +12,19 @@ const useStyles = makeStyles({
     bottom: 0,
     position: 'absolute',
   },
-  footerInner: {
-    fontSize: 12,
-  },
 });
 
 const Footer = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.footerContainer}>
-      <div className={classes.footerInner}>
+    <footer className={classes.container}>
+      <Typography>
         {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
         &copy; 2020 Kevin Cooper &bull;{' '}
         <a href="https://github.com/cooperka/personal-website">View source</a>
-      </div>
-    </div>
+      </Typography>
+    </footer>
   );
 };
 

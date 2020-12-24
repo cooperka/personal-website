@@ -2,20 +2,20 @@
 
 exports[`renders 1`] = `
 <li
-  className="social-link-item"
+  className="makeStyles-listItem-1"
 >
   <a
-    className="social-link-anchor"
+    className="makeStyles-anchor-2"
     href="url"
   >
     <img
       alt="name"
-      className="social-icon dark"
+      className="makeStyles-icon-3 makeStyles-dark-4 dark"
       src="icon"
     />
     <img
       alt="name"
-      className="social-icon colorful"
+      className="makeStyles-icon-3 makeStyles-colorful-5 colorful"
       src="iconHover"
     />
   </a>

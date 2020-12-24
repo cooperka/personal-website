@@ -2,126 +2,126 @@
 
 exports[`renders 1`] = `
 <div
-  className="main-section"
+  className="makeStyles-section-1"
 >
-  <div
-    className="main-subtitle"
+  <h2
+    className="MuiTypography-root MuiTypography-h2"
   >
     Find out more:
-  </div>
+  </h2>
   <ul
-    className="links"
+    className="makeStyles-links-2"
   >
     <li
-      className="social-link-item"
+      className="makeStyles-listItem-3"
     >
       <a
-        className="social-link-anchor"
+        className="makeStyles-anchor-4"
         href="https://github.com/cooperka"
       >
         <img
           alt="GitHub"
-          className="social-icon dark"
+          className="makeStyles-icon-5 makeStyles-dark-6 dark"
           src="Github-black.svg"
         />
         <img
           alt="GitHub"
-          className="social-icon colorful"
+          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="Github-color.svg"
         />
       </a>
     </li>
     <li
-      className="social-link-item"
+      className="makeStyles-listItem-3"
     >
       <a
-        className="social-link-anchor"
+        className="makeStyles-anchor-4"
         href="https://www.linkedin.com/in/cooperka92"
       >
         <img
           alt="LinkedIn"
-          className="social-icon dark"
+          className="makeStyles-icon-5 makeStyles-dark-6 dark"
           src="LinkedIn-black.svg"
         />
         <img
           alt="LinkedIn"
-          className="social-icon colorful"
+          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="LinkedIn-color.svg"
         />
       </a>
     </li>
     <li
-      className="social-link-item"
+      className="makeStyles-listItem-3"
     >
       <a
-        className="social-link-anchor"
+        className="makeStyles-anchor-4"
         href="https://medium.com/@cooperka"
       >
         <img
           alt="Medium"
-          className="social-icon dark"
+          className="makeStyles-icon-5 makeStyles-dark-6 dark"
           src="Medium-black.svg"
         />
         <img
           alt="Medium"
-          className="social-icon colorful"
+          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="Medium-color.svg"
         />
       </a>
     </li>
     <li
-      className="social-link-item"
+      className="makeStyles-listItem-3"
     >
       <a
-        className="social-link-anchor"
+        className="makeStyles-anchor-4"
         href="https://www.facebook.com/cooperka"
       >
         <img
           alt="Facebook"
-          className="social-icon dark"
+          className="makeStyles-icon-5 makeStyles-dark-6 dark"
           src="Facebook-black.svg"
         />
         <img
           alt="Facebook"
-          className="social-icon colorful"
+          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="Facebook-color.svg"
         />
       </a>
     </li>
     <li
-      className="social-link-item"
+      className="makeStyles-listItem-3"
     >
       <a
-        className="social-link-anchor"
+        className="makeStyles-anchor-4"
         href="https://twitter.com/cooperka92"
       >
         <img
           alt="Twitter"
-          className="social-icon dark"
+          className="makeStyles-icon-5 makeStyles-dark-6 dark"
           src="Twitter-black.svg"
         />
         <img
           alt="Twitter"
-          className="social-icon colorful"
+          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="Twitter-color.svg"
         />
       </a>
     </li>
     <li
-      className="social-link-item"
+      className="makeStyles-listItem-3"
     >
       <a
-        className="social-link-anchor"
+        className="makeStyles-anchor-4"
         href="https://mentalmorsels.tumblr.com/"
       >
         <img
           alt="Tumblr"
-          className="social-icon dark"
+          className="makeStyles-icon-5 makeStyles-dark-6 dark"
           src="Tumblr-black.svg"
         />
         <img
           alt="Tumblr"
-          className="social-icon colorful"
+          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="Tumblr-color.svg"
         />
       </a>
