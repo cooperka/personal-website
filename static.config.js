@@ -1,11 +1,12 @@
 import React from 'react';
-import { createGenerateClassName } from '@material-ui/core/styles';
-
-const generateClassName = createGenerateClassName();
 
 // Docs: https://github.com/react-static/react-static/blob/master/docs/config.md
 export default {
-  plugins: [['react-static-plugin-jss', { providerProps: { generateClassName } }]],
+  plugins: [
+    'jss-provider',
+    // Waiting on official changes re: https://github.com/react-static/react-static/issues/1179.
+    // ['react-static-plugin-jss', { providerProps: { generateClassName } }],
+  ],
 
   siteRoot: 'https://cooperka.com',
 
@@ -45,10 +46,7 @@ export default {
         <script type="text/javascript" dangerouslySetInnerHTML={getDripScript()} />
       </Head>
 
-      <Body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        {children}
-      </Body>
+      <Body>{children}</Body>
     </Html>
   ),
   /* eslint-enable */

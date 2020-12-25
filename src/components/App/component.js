@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   createMuiTheme,
-  MuiThemeProvider,
+  ThemeProvider,
   CssBaseline,
   makeStyles,
 } from '@material-ui/core';
@@ -12,7 +12,7 @@ import ProjectLinks from './ProjectLinks/component';
 import Footer from './Footer/component';
 
 import 'fontsource-roboto';
-import theme from './theme';
+import theme from '../../theme';
 
 const muiTheme = createMuiTheme(theme);
 
@@ -24,11 +24,25 @@ const useStyles = makeStyles({
   },
 });
 
+class AppRoot extends React.Component {
+  componentDidMount() {
+    // Remove the temporary statically injected CSS (added by react-static-plugin-jss).
+    // const jssStyles = document.getElementById('jss-server-side');
+    // if (jssStyles && jssStyles.parentNode) {
+    //   jssStyles.parentNode.removeChild(jssStyles);
+    // }
+  }
+
+  render() {
+    return <App />;
+  }
+}
+
 const App = () => {
   const classes = useStyles();
 
   return (
-    <MuiThemeProvider theme={muiTheme}>
+    <ThemeProvider theme={muiTheme}>
       <CssBaseline />
       <div className={classes.container}>
         <MainHeader />
@@ -36,8 +50,8 @@ const App = () => {
         <SocialLinks />
         <Footer />
       </div>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 };
 
-export default App;
+export default AppRoot;
