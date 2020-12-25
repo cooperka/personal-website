@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "start": "react-static start",
-    "format": "prettier --write 'src/**/*.js' --write '*.js' --write '*.md'",
+    "format": "prettier --write '{src,plugins}/**/*.js' --write '*.{js,md}'",
     "lint": "eslint --ext .js .",
     "test": "jest",
     "clean": "rm -rf build dist artifacts tmp",
     "build": "react-static build",
+    "stage": "yarn run build --staging && serve dist -p 3000",
     "analyze": "yarn run build --analyze",
     "deploy": "yarn run build && firebase deploy"
   },
@@ -43,7 +44,8 @@
     "pretty-quick": "3.1.0",
     "react-jss": "10.5.0",
     "react-static-plugin-jss": "7.3.0",
-    "react-test-renderer": "17.0.1"
+    "react-test-renderer": "17.0.1",
+    "serve": "11.3.2"
   },
   "prettier": {
     "singleQuote": true,
