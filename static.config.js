@@ -2,11 +2,7 @@ import React from 'react';
 
 // Docs: https://github.com/react-static/react-static/blob/master/docs/config.md
 export default {
-  plugins: [
-    'jss-provider',
-    // Waiting on official changes re: https://github.com/react-static/react-static/issues/1179.
-    // ['react-static-plugin-jss', { providerProps: { generateClassName } }],
-  ],
+  plugins: ['jss-provider'],
 
   siteRoot: 'https://cooperka.com',
 
