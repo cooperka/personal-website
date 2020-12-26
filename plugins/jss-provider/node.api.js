@@ -1,4 +1,3 @@
-import React from 'react';
 import { ServerStyleSheets } from '@material-ui/core';
 
 export default () => ({
