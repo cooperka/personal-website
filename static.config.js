@@ -13,7 +13,7 @@ export default {
   getRoutes: () => [
     {
       path: '/',
-      component: 'src/components/App/component',
+      template: 'src/components/App/component',
     },
   ],
 

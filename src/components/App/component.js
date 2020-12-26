@@ -24,20 +24,6 @@ const useStyles = makeStyles({
   },
 });
 
-class AppRoot extends React.Component {
-  componentDidMount() {
-    // Remove the temporary statically injected CSS (added by react-static-plugin-jss).
-    // const jssStyles = document.getElementById('jss-server-side');
-    // if (jssStyles && jssStyles.parentNode) {
-    //   jssStyles.parentNode.removeChild(jssStyles);
-    // }
-  }
-
-  render() {
-    return <App />;
-  }
-}
-
 const App = () => {
   const classes = useStyles();
 
@@ -54,4 +40,4 @@ const App = () => {
   );
 };
 
-export default AppRoot;
+export default App;
