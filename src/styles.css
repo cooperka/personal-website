@@ -19,3 +19,8 @@ body {
   /* Always show vertical scrollbar to prevent jumpy navigation. */
   overflow-y: scroll;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

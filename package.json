@@ -9,7 +9,8 @@
     "test": "jest",
     "clean": "rm -rf build dist artifacts tmp",
     "build": "react-static build",
-    "stage": "yarn run build --staging && serve dist -p 3000",
+    "serve": "serve dist -p 3000",
+    "stage": "yarn run build --staging && yarn run serve",
     "analyze": "yarn run build --analyze",
     "deploy": "yarn run build && netlify deploy"
   },
