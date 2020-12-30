@@ -5,8 +5,3 @@ cache: yarn
 script:
   - yarn run lint
   - yarn test
-
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: yarn run deploy --token "$FIREBASE_TOKEN" -m 'Deployed by Travis CI.'
