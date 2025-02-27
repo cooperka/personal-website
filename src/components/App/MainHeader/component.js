@@ -32,7 +32,7 @@ const MainHeader = () => {
       </Box>
       <Typography variant="h3">Kevin Cooper</Typography>
       <Typography variant="h6">
-        Improv comedy. Social justice. Ethical technology. Software consultant.
+        Improv comedy, ethical technology, anti-oppressive software consultant.
       </Typography>
     </div>
   );
