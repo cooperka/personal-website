@@ -31,7 +31,7 @@ exports[`renders 1`] = `
         <p
           className="MuiTypography-root MuiTypography-body2"
         >
-          Web piano built with Tone.js
+          Web piano built with Tone.js for fun (since nothing else existed at the time that supported multi-key-press tones).
         </p>
       </div>
     </div>
@@ -54,7 +54,7 @@ exports[`renders 1`] = `
         <p
           className="MuiTypography-root MuiTypography-body2"
         >
-          Game to improve your memory by matching celebrity names to faces.
+          Game to improve your memory by matching celebrity names to faces. Content scraped from Wikipedia.
         </p>
       </div>
     </div>
