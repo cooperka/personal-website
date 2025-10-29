@@ -36,7 +36,7 @@ exports[`renders 1`] = `
     >
       <a
         className="makeStyles-anchor-4"
-        href="https://www.linkedin.com/in/cooperka92"
+        href="https://www.linkedin.com/in/kcoop33"
       >
         <img
           alt="LinkedIn"
@@ -85,25 +85,6 @@ exports[`renders 1`] = `
           alt="Facebook"
           className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
           src="Facebook-color.svg"
-        />
-      </a>
-    </li>
-    <li
-      className="makeStyles-listItem-3"
-    >
-      <a
-        className="makeStyles-anchor-4"
-        href="https://twitter.com/cooperka92"
-      >
-        <img
-          alt="Twitter"
-          className="makeStyles-icon-5 makeStyles-dark-6 dark"
-          src="Twitter-black.svg"
-        />
-        <img
-          alt="Twitter"
-          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
-          src="Twitter-color.svg"
         />
       </a>
     </li>

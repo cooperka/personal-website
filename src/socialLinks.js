@@ -8,7 +8,7 @@ export default [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/cooperka92',
+    url: 'https://www.linkedin.com/in/kcoop33',
     icon: require('./images/LinkedIn-black.svg'),
     iconHover: require('./images/LinkedIn-color.svg'),
   },
@@ -23,12 +23,6 @@ export default [
     url: 'https://www.facebook.com/cooperka',
     icon: require('./images/Facebook-black.svg'),
     iconHover: require('./images/Facebook-color.svg'),
-  },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/cooperka92',
-    icon: require('./images/Twitter-black.svg'),
-    iconHover: require('./images/Twitter-color.svg'),
   },
   {
     name: 'Tumblr',
