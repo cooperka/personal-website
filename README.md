@@ -1,8 +1,6 @@
 # cooperka.com
 
-[![Build status](https://travis-ci.org/cooperka/react-native-snackbar.svg?branch=master)](https://travis-ci.org/cooperka/react-native-snackbar)
-
-My [personal website](https://cooperka.herokuapp.com).
+My [personal website](https://cooperka.com).
 
 ## Developing
 
@@ -12,5 +10,7 @@ My [personal website](https://cooperka.herokuapp.com).
 3. `yarn test`
 
 ## Publishing
+
+Hosted on [Netlify](https://app.netlify.com/projects/cooperka/overview).
 
 1. `yarn run deploy`
