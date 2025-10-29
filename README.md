@@ -13,4 +13,4 @@ My [personal website](https://cooperka.com).
 
 Hosted on [Netlify](https://app.netlify.com/projects/cooperka/overview).
 
-1. `yarn run deploy`
+1. Push changes to trigger an automatic deploy after tests pass
