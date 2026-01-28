@@ -46,10 +46,6 @@ export default {
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="800" />
 
-        {/* Google Analytics - Global site tag */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110594588-1" />
-        <script type="text/javascript" dangerouslySetInnerHTML={getGoogleAnalyticsScript()} />
-
         {/* Drip analytics */}
         <script type="text/javascript" dangerouslySetInnerHTML={getDripScript()} />
       </Head>
