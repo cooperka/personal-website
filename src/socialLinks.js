@@ -24,11 +24,5 @@ export default [
     icon: require('./images/Facebook-black.svg'),
     iconHover: require('./images/Facebook-color.svg'),
   },
-  {
-    name: 'Tumblr',
-    url: 'https://mentalmorsels.tumblr.com/',
-    icon: require('./images/Tumblr-black.svg'),
-    iconHover: require('./images/Tumblr-color.svg'),
-  },
 ];
 /* eslint-enable */

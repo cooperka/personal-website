@@ -88,25 +88,6 @@ exports[`renders 1`] = `
         />
       </a>
     </li>
-    <li
-      className="makeStyles-listItem-3"
-    >
-      <a
-        className="makeStyles-anchor-4"
-        href="https://mentalmorsels.tumblr.com/"
-      >
-        <img
-          alt="Tumblr"
-          className="makeStyles-icon-5 makeStyles-dark-6 dark"
-          src="Tumblr-black.svg"
-        />
-        <img
-          alt="Tumblr"
-          className="makeStyles-icon-5 makeStyles-colorful-7 colorful"
-          src="Tumblr-color.svg"
-        />
-      </a>
-    </li>
   </ul>
 </div>
 `;
