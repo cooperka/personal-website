@@ -3,16 +3,20 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "start": "react-static start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-static start",
     "format": "prettier --write '{src,plugins}/**/*.js' --write '*.{js,md}'",
     "lint": "eslint --ext .js .",
     "test": "jest",
     "clean": "rm -rf build dist artifacts tmp",
-    "build": "react-static build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-static build",
     "serve": "serve dist -p 3000",
     "stage": "yarn run build --staging && yarn run serve",
     "analyze": "yarn run build --analyze",
     "deploy": "yarn run build && netlify deploy"
+  },
+  "resolutions": {
+    "source-map_README": "Pin to older version to fix 'Error: You must provide the URL of lib/mappings.wasm'",
+    "source-map": "0.6.1"
   },
   "dependencies": {
     "@material-ui/core": "4.11.2",
@@ -25,7 +29,8 @@
     "react-static": "7.4.2",
     "react-static-plugin-reach-router": "7.4.2",
     "react-static-plugin-sitemap": "7.4.2",
-    "react-static-plugin-source-filesystem": "7.4.2"
+    "react-static-plugin-source-filesystem": "7.4.2",
+    "source-map": "0.6.1"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
